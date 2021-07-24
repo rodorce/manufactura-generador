@@ -1,0 +1,1 @@
+document.querySelector('.template-body').innerHTML = localStorage.input
