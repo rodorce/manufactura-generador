@@ -39,9 +39,27 @@
                 </div>
               </div>
 
-              <div class="field">
+              <div class="dropdown">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span class="numero_materiales">Seleccionar cantidad de materiales</span>
+                    <span class="icon is-small">
+                      <!--fontawesome required for the icon-->
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="dropdown-content">
+                    <a class="dropdown-item">1</a>
+                    <a class="dropdown-item">2</a>
+                    <a class="dropdown-item">3</a>
+                  </div>
+                </div>
+              </div>
+              <div class="field materiales_en_la_familia">
                 <label class="label">Materiales en la familia</label>
-                <div class="control">
+                <div class="control material-1">
                   <h5>Material 1</h5>
                   <input class="input family-title" type="text" placeholder="Material 1" style="margin-bottom:.5em">
                   <input class="input family-subtitle" type="text" placeholder="Subtitulo" style="margin-bottom:.5em">
@@ -52,21 +70,22 @@
                   <input class="input family-propertyBar11" type="text" placeholder="Propiedad Barra 1" style="margin-bottom:.5em">
                   <input class="input family-min-index-propertyBar11" type="text" placeholder="Indice Menor Barra 1" style="margin-bottom:.5em">
                   <input class="input family-max-index-propertyBar11" type="text" placeholder="Indice Mayor Barra 1" style="margin-bottom:.5em">
-                  <input class="input family-value-index-propertyBar11" type="text" placeholder="Valor barra (numero)" style="margin-bottom:.5em">
+                  <input class="input family-value-index-propertyBar11" type="text" placeholder="Valor barra. Rango: 1-100" style="margin-bottom:.5em">
                   <input class="input family-propertyBar12" type="text" placeholder="Propiedad Barra 2" style="margin-bottom:.5em">
                   <input class="input family-min-index-propertyBar12" type="text" placeholder="Indice Menor Barra 2" style="margin-bottom:.5em">
                   <input class="input family-max-index-propertyBar12" type="text" placeholder="Indice Mayor Barra 2" style="margin-bottom:.5em">
-                  <input class="input family-value-index-propertyBar12" type="text" placeholder="Valor barra (numero)" style="margin-bottom:.5em">
+                  <input class="input family-value-index-propertyBar12" type="text" placeholder="Valor barra. Rango: 1-100" style="margin-bottom:.5em">
                   <input class="input family-propertyBar13" type="text" placeholder="Propiedad Barra 3" style="margin-bottom:.5em">
                   <input class="input family-min-index-propertyBar13" type="text" placeholder="Indice Menor Barra 3" style="margin-bottom:.5em">
                   <input class="input family-max-index-propertyBar13" type="text" placeholder="Indice Mayor Barra 3" style="margin-bottom:.5em">
-                  <input class="input family-value-index-propertyBar13" type="text" placeholder="Valor barra (numero)" style="margin-bottom:.5em">
+                  <input class="input family-value-index-propertyBar13" type="text" placeholder="VValor barra. Rango: 1-100" style="margin-bottom:.5em">
                   <input class="input family-image-gallery11" type="text" placeholder="Enlace de la imagen (Tamaño 1354x903)" style="margin-bottom:.5em">
                   <input class="input family-image-gallery12" type="text" placeholder="Enlace de la imagen (Tamaño 1354x903)" style="margin-bottom:.5em">
                   <input class="input family-image-gallery13" type="text" placeholder="Enlace de la imagen (Tamaño 1354x903)" style="margin-bottom:.5em">
                   <input class="input family-image-gallery14" type="text" placeholder="Enlace de la imagen (Tamaño 1354x903)" style="margin-bottom:.5em">
                   <input class="input family-image" type="text" placeholder="Enlace de la imagen (Tamaño 250x250)" style="margin-bottom:2em">
-                  
+                </control>
+                <control class="material-2">
                   <h5>Material 2</h5>
                   <input class="input family-title2" type="text" placeholder="Material 2" style="margin-bottom:.5em">
                   <input class="input family-subtitle2" type="text" placeholder="Subtitulo" style="margin-bottom:.5em">
@@ -77,20 +96,22 @@
                   <input class="input family-propertyBar21" type="text" placeholder="Propiedad Barra 1" style="margin-bottom:.5em">
                   <input class="input family-min-index-propertyBar21" type="text" placeholder="Indice Menor Barra 1" style="margin-bottom:.5em">
                   <input class="input family-max-index-propertyBar21" type="text" placeholder="Indice Mayor Barra 1" style="margin-bottom:.5em">
-                  <input class="input family-value-index-propertyBar21" type="text" placeholder="Valor barra (numero)" style="margin-bottom:.5em">
+                  <input class="input family-value-index-propertyBar21" type="text" placeholder="VValor barra. Rango: 1-100" style="margin-bottom:.5em">
                   <input class="input family-propertyBar22" type="text" placeholder="Propiedad Barra 2" style="margin-bottom:.5em">
                   <input class="input family-min-index-propertyBar22" type="text" placeholder="Indice Menor Barra 2" style="margin-bottom:.5em">
                   <input class="input family-max-index-propertyBar22" type="text" placeholder="Indice Mayor Barra 2" style="margin-bottom:.5em">
-                  <input class="input family-value-index-propertyBar22" type="text" placeholder="Valor barra (numero)" style="margin-bottom:.5em">
+                  <input class="input family-value-index-propertyBar22" type="text" placeholder="Valor barra. Rango: 1-100" style="margin-bottom:.5em">
                   <input class="input family-propertyBar23" type="text" placeholder="Propiedad Barra 3" style="margin-bottom:.5em">
                   <input class="input family-min-index-propertyBar23" type="text" placeholder="Indice Menor Barra 3" style="margin-bottom:.5em">
                   <input class="input family-max-index-propertyBar23" type="text" placeholder="Indice Mayor Barra 3" style="margin-bottom:.5em">
-                  <input class="input family-value-index-propertyBar23" type="text" placeholder="Valor barra (numero)" style="margin-bottom:.5em">
+                  <input class="input family-value-index-propertyBar23" type="text" placeholder="Valor barra. Rango: 1-100" style="margin-bottom:.5em">
                   <input class="input family-image-gallery21" type="text" placeholder="Enlace de la imagen (Tamaño 1354x903)" style="margin-bottom:.5em">
                   <input class="input family-image-gallery22" type="text" placeholder="Enlace de la imagen (Tamaño 1354x903)" style="margin-bottom:.5em">
                   <input class="input family-image-gallery23" type="text" placeholder="Enlace de la imagen (Tamaño 1354x903)" style="margin-bottom:.5em">
                   <input class="input family-image-gallery24" type="text" placeholder="Enlace de la imagen (Tamaño 1354x903)" style="margin-bottom:.5em">
                   <input class="input family-image2" type="text" placeholder="Enlace de la imagen (Tamaño 250x250)" style="margin-bottom:2em">
+                  </control>
+                  <control class="material-3">
                   <h5>Material 3</h5>
                   <input class="input family-title3" type="text" placeholder="Material 3" style="margin-bottom:.5em">
                   <input class="input family-subtitle3" type="text" placeholder="Subtitulo" style="margin-bottom:.5em">
@@ -115,7 +136,7 @@
                   <input class="input family-image-gallery33" type="text" placeholder="Enlace de la imagen (Tamaño 1354x903)" style="margin-bottom:.5em">
                   <input class="input family-image-gallery34" type="text" placeholder="Enlace de la imagen (Tamaño 1354x903)" style="margin-bottom:.5em">
                   <input class="input family-image3" type="text" placeholder="Enlace de la imagen (Tamaño 250x250)" style="margin-bottom:2em">
-
+                  </control>
                 </div>
               </div>
               
