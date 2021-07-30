@@ -8,7 +8,7 @@ let familyMaterialTitle = []
 let familyMaterialSubtitle = []
 let familyImages = []
 let materials = ``
-let materialsDescription = ``
+let materialsDescription1 = ``
 let materialsDescription2 = ``
 let materialsDescription3 = ``
 dropdown.addEventListener('click', function(event) {
@@ -189,7 +189,7 @@ submitBtn.addEventListener('click', () => {
     thumbnailImg[2] = document.querySelector('.thumbnail-image3').value
 
     
-    if(numMats.innerHTML == 1) {
+    if(numMats.innerHTML == 1 || numMats.innerHTML === 'Seleccionar cantidad de materiales') {
       materials = `
   <div class="materials">
     <div class="button material-button materialBtn1 is-white">
@@ -205,7 +205,7 @@ submitBtn.addEventListener('click', () => {
     </div>
   </div>
   `
-      materialsDescription = `<div class="column matDesc1">
+      materialsDescription1 = `<div class="column matDesc1" style="display:block">
       <div class="material-desc">
         <h2 class="title">${familyMaterialTitle[0]}</h2>
         <h4>${familyMaterialSubtitle[0]}</h4>
@@ -1023,7 +1023,7 @@ submitBtn.addEventListener('click', () => {
           <h3>Materials in this family</h3>
           ${materials}
         </div>
-        ${materialsDescription} 
+        ${materialsDescription1} 
         ${materialsDescription2}
         ${materialsDescription3}
       </div>
