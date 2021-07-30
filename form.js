@@ -530,7 +530,7 @@ let matDesc3 = `<div class="column matDesc3" style="display:none">
 
     }
 
-    if(numMats.innerHTML == 2) {
+    if(numMats.innerHTML == 2 || numMats.innerHTML === 'Seleccionar cantidad de materiales') {
       materials = `
     <div class="materials">
     <div class="button material-button materialBtn1  is-white">
@@ -558,7 +558,7 @@ let matDesc3 = `<div class="column matDesc3" style="display:none">
   </div>`
     }
 
-    if(numMats.innerHTML == 3) {
+    if(numMats.innerHTML == 3 || numMats.innerHTML === 'Seleccionar cantidad de materiales') {
       materials = `
       <div class="materials">
               <div class="button material-button materialBtn1 is-white">
