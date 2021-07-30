@@ -8,9 +8,6 @@ let familyMaterialTitle = []
 let familyMaterialSubtitle = []
 let familyImages = []
 let materials = ``
-let materialsDescription1 = ``
-let materialsDescription2 = ``
-let materialsDescription3 = ``
 dropdown.addEventListener('click', function(event) {
   event.stopPropagation();
   dropdown.classList.toggle('is-active');
@@ -188,6 +185,331 @@ submitBtn.addEventListener('click', () => {
     thumbnailImg[1] = document.querySelector('.thumbnail-image2').value
     thumbnailImg[2] = document.querySelector('.thumbnail-image3').value
 
+    let  matDesc1 = `<div class="column matDesc1" style="display:block">
+<div class="material-desc">
+  <h2 class="title">${familyMaterialTitle[0]}</h2>
+  <h4>${familyMaterialSubtitle[0]}</h4>
+  <p>${familyMaterialDescription[0]}</p>
+  <div class="columns">
+    <div class="column">
+      <ul>
+        <li class="list-style: none">
+          <span class="icon has-text-success">
+            <i class="fas fa-check-circle"></i>
+          </span>
+          ${familyFeature1[0]}
+        </li>
+          <span class="icon has-text-success">
+            <i class="fas fa-check-circle"></i>
+          </span>
+          ${familyFeature1[1]}
+        </ul>
+      </li>
+    </div>
+    <div class="column">
+      <ul>
+        <li>
+          <span class="icon has-text-success">
+            <i class="fas fa-check-circle"></i>
+          </span>
+          ${familyFeature1[2]}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="description-bars">
+    <div class="columns">
+      <div class="column is-2">
+        <strong>${familyPropertyBar1[0]}</strong>
+      </div>
+      <div class="column is-1">
+        <span class="icon has-text-info">
+          <i class="fas fa-info-circle"></i>
+        </span>
+      </div>
+      <div class="column is-1">
+        ${propertyBarMinIndex[0]}
+      </div>
+      <div class="column is-6">
+        <progress class="progress is-link" value="${propertyBarValueIndex[0]}" max="100"
+          style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[0]}</progress>
+      </div>
+      <div class="column is-2">
+        ${propertyBarMaxIndex[0]}
+      </div>
+
+    </div>
+    <div class="columns">
+      <div class="column is-2">
+        <strong>${familyPropertyBar1[1]}</strong>
+      </div>
+      <div class="column is-1">
+        <span class="icon has-text-info">
+          <i class="fas fa-info-circle"></i>
+        </span>
+      </div>
+      <div class="column is-1">
+        ${propertyBarMinIndex[1]}
+      </div>
+      <div class="column is-6">
+        <progress class="progress is-link" value="${propertyBarValueIndex[1]}" max="100"
+          style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[1]}</progress>
+      </div>
+      <div class="column is-2">
+        ${propertyBarMaxIndex[1]}
+      </div>
+
+    </div>
+    <div class="columns">
+      <div class="column is-2">
+        <strong>${familyPropertyBar1[2]}</strong>
+      </div>
+      <div class="column is-1">
+        <span class="icon has-text-info">
+          <i class="fas fa-info-circle"></i>
+        </span>
+      </div>
+      <div class="column is-1">
+        ${propertyBarMinIndex[2]}
+      </div>
+      <div class="column is-6">
+        <progress class="progress is-link" value=${propertyBarValueIndex[2]} max="100"
+          style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[2]}</progress>
+      </div>
+      <div class="column is-2">
+        ${propertyBarMaxIndex[2]}
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-one-fourth"><img src="${imageGallery1[0]}" alt="">
+      </div>
+      <div class="column is-one-fourth"><img src="${imageGallery1[1]}" alt="">
+      </div>
+      <div class="column is-one-fourth"><img src="${imageGallery1[2]}" alt="">
+      </div>
+      <div class="column is-one-fourth"><img src="${imageGallery1[3]}" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+</div>`
+let matDesc2 = `<div class="column matDesc2" style="display:none">
+<div class="material-desc">
+  <h2 class="title">${familyMaterialTitle[1]}</h2>
+  <h4>${familyMaterialSubtitle[1]}</h4>
+  <p>${familyMaterialDescription[1]}</p>
+  <div class="columns">
+    <div class="column">
+      <ul>
+        <li class="list-style: none">
+          <span class="icon has-text-success">
+            <i class="fas fa-check-circle"></i>
+          </span>
+          ${familyFeature2[0]}
+        </li>
+          <span class="icon has-text-success">
+            <i class="fas fa-check-circle"></i>
+          </span>
+          ${familyFeature2[1]}
+        </ul>
+      </li>
+    </div>
+    <div class="column">
+      <ul>
+        <li>
+          <span class="icon has-text-success">
+            <i class="fas fa-check-circle"></i>
+          </span>
+          ${familyFeature2[2]}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="description-bars">
+    <div class="columns">
+      <div class="column is-2">
+        <strong>${familyPropertyBar2[0]}</strong>
+      </div>
+      <div class="column is-1">
+        <span class="icon has-text-info">
+          <i class="fas fa-info-circle"></i>
+        </span>
+      </div>
+      <div class="column is-1">
+        ${propertyBarMinIndex2[0]}
+      </div>
+      <div class="column is-6">
+        <progress class="progress is-link" value="${propertyBarValueIndex[0]}" max="100"
+          style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[0]}</progress>
+      </div>
+      <div class="column is-2">
+        ${propertyBarMaxIndex2[0]}
+      </div>
+
+    </div>
+    <div class="columns">
+      <div class="column is-2">
+        <strong>${familyPropertyBar2[1]}</strong>
+      </div>
+      <div class="column is-1">
+        <span class="icon has-text-info">
+          <i class="fas fa-info-circle"></i>
+        </span>
+      </div>
+      <div class="column is-1">
+        ${propertyBarMinIndex2[1]}
+      </div>
+      <div class="column is-6">
+        <progress class="progress is-link" value="${propertyBarValueIndex[1]}" max="100"
+          style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[1]}</progress>
+      </div>
+      <div class="column is-2">
+        ${propertyBarMaxIndex2[1]}
+      </div>
+
+    </div>
+    <div class="columns">
+      <div class="column is-2">
+        <strong>${familyPropertyBar2[2]}</strong>
+      </div>
+      <div class="column is-1">
+        <span class="icon has-text-info">
+          <i class="fas fa-info-circle"></i>
+        </span>
+      </div>
+      <div class="column is-1">
+        ${propertyBarMinIndex2[2]}
+      </div>
+      <div class="column is-6">
+        <progress class="progress is-link" value=${propertyBarValueIndex[2]} max="100"
+          style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[2]}</progress>
+      </div>
+      <div class="column is-2">
+        ${propertyBarMaxIndex2[2]}
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-one-fourth"><img src="${imageGallery2[0]}" alt="">
+      </div>
+      <div class="column is-one-fourth"><img src="${imageGallery2[1]}" alt="">
+      </div>
+      <div class="column is-one-fourth"><img src="${imageGallery2[2]}" alt="">
+      </div>
+      <div class="column is-one-fourth"><img src="${imageGallery2[3]}" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+</div>`
+let matDesc3 = `<div class="column matDesc3" style="display:none">
+<div class="material-desc">
+  <h2 class="title">${familyMaterialTitle[2]}</h2>
+  <h4>${familyMaterialSubtitle[2]}</h4>
+  <p>${familyMaterialDescription[2]}</p>
+  <div class="columns">
+    <div class="column">
+      <ul>
+        <li class="list-style: none">
+          <span class="icon has-text-success">
+            <i class="fas fa-check-circle"></i>
+          </span>
+          ${familyFeature3[0]}
+        </li>
+          <span class="icon has-text-success">
+            <i class="fas fa-check-circle"></i>
+          </span>
+          ${familyFeature3[1]}
+        </ul>
+      </li>
+    </div>
+    <div class="column">
+      <ul>
+        <li>
+          <span class="icon has-text-success">
+            <i class="fas fa-check-circle"></i>
+          </span>
+          ${familyFeature3[2]}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="description-bars">
+    <div class="columns">
+      <div class="column is-2">
+        <strong>${familyPropertyBar3[0]}</strong>
+      </div>
+      <div class="column is-1">
+        <span class="icon has-text-info">
+          <i class="fas fa-info-circle"></i>
+        </span>
+      </div>
+      <div class="column is-1">
+        ${propertyBarMinIndex3[0]}
+      </div>
+      <div class="column is-6">
+        <progress class="progress is-link" value="${propertyBarValueIndex[0]}" max="100"
+          style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[0]}</progress>
+      </div>
+      <div class="column is-2">
+        ${propertyBarMaxIndex3[0]}
+      </div>
+
+    </div>
+    <div class="columns">
+      <div class="column is-2">
+        <strong>${familyPropertyBar3[1]}</strong>
+      </div>
+      <div class="column is-1">
+        <span class="icon has-text-info">
+          <i class="fas fa-info-circle"></i>
+        </span>
+      </div>
+      <div class="column is-1">
+        ${propertyBarMinIndex3[1]}
+      </div>
+      <div class="column is-6">
+        <progress class="progress is-link" value="${propertyBarValueIndex[1]}" max="100"
+          style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[1]}</progress>
+      </div>
+      <div class="column is-2">
+        ${propertyBarMaxIndex3[1]}
+      </div>
+
+    </div>
+    <div class="columns">
+      <div class="column is-2">
+        <strong>${familyPropertyBar3[2]}</strong>
+      </div>
+      <div class="column is-1">
+        <span class="icon has-text-info">
+          <i class="fas fa-info-circle"></i>
+        </span>
+      </div>
+      <div class="column is-1">
+        ${propertyBarMinIndex3[2]}
+      </div>
+      <div class="column is-6">
+        <progress class="progress is-link" value=${propertyBarValueIndex[2]} max="100"
+          style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[2]}</progress>
+      </div>
+      <div class="column is-2">
+        ${propertyBarMaxIndex3[2]}
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-one-fourth"><img src="${imageGallery2[0]}" alt="">
+      </div>
+      <div class="column is-one-fourth"><img src="${imageGallery2[1]}" alt="">
+      </div>
+      <div class="column is-one-fourth"><img src="${imageGallery2[2]}" alt="">
+      </div>
+      <div class="column is-one-fourth"><img src="${imageGallery2[3]}" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+</div>`
+
     
     if(numMats.innerHTML == 1 || numMats.innerHTML === 'Seleccionar cantidad de materiales') {
       materials = `
@@ -205,114 +527,7 @@ submitBtn.addEventListener('click', () => {
     </div>
   </div>
   `
-      materialsDescription1 = `<div class="column matDesc1" style="display:block">
-      <div class="material-desc">
-        <h2 class="title">${familyMaterialTitle[0]}</h2>
-        <h4>${familyMaterialSubtitle[0]}</h4>
-        <p>${familyMaterialDescription[0]}</p>
-        <div class="columns">
-          <div class="column">
-            <ul>
-              <li class="list-style: none">
-                <span class="icon has-text-success">
-                  <i class="fas fa-check-circle"></i>
-                </span>
-                ${familyFeature1[0]}
-              </li>
-                <span class="icon has-text-success">
-                  <i class="fas fa-check-circle"></i>
-                </span>
-                ${familyFeature1[1]}
-              </ul>
-            </li>
-          </div>
-          <div class="column">
-            <ul>
-              <li>
-                <span class="icon has-text-success">
-                  <i class="fas fa-check-circle"></i>
-                </span>
-                ${familyFeature1[2]}
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="description-bars">
-          <div class="columns">
-            <div class="column is-2">
-              <strong>${familyPropertyBar1[0]}</strong>
-            </div>
-            <div class="column is-1">
-              <span class="icon has-text-info">
-                <i class="fas fa-info-circle"></i>
-              </span>
-            </div>
-            <div class="column is-1">
-              ${propertyBarMinIndex[0]}
-            </div>
-            <div class="column is-6">
-              <progress class="progress is-link" value="${propertyBarValueIndex[0]}" max="100"
-                style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[0]}</progress>
-            </div>
-            <div class="column is-2">
-              ${propertyBarMaxIndex[0]}
-            </div>
 
-          </div>
-          <div class="columns">
-            <div class="column is-2">
-              <strong>${familyPropertyBar1[1]}</strong>
-            </div>
-            <div class="column is-1">
-              <span class="icon has-text-info">
-                <i class="fas fa-info-circle"></i>
-              </span>
-            </div>
-            <div class="column is-1">
-              ${propertyBarMinIndex[1]}
-            </div>
-            <div class="column is-6">
-              <progress class="progress is-link" value="${propertyBarValueIndex[1]}" max="100"
-                style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[1]}</progress>
-            </div>
-            <div class="column is-2">
-              ${propertyBarMaxIndex[1]}
-            </div>
-
-          </div>
-          <div class="columns">
-            <div class="column is-2">
-              <strong>${familyPropertyBar1[2]}</strong>
-            </div>
-            <div class="column is-1">
-              <span class="icon has-text-info">
-                <i class="fas fa-info-circle"></i>
-              </span>
-            </div>
-            <div class="column is-1">
-              ${propertyBarMinIndex[2]}
-            </div>
-            <div class="column is-6">
-              <progress class="progress is-link" value=${propertyBarValueIndex[2]} max="100"
-                style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[2]}</progress>
-            </div>
-            <div class="column is-2">
-              ${propertyBarMaxIndex[2]}
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column is-one-fourth"><img src="${imageGallery1[0]}" alt="">
-            </div>
-            <div class="column is-one-fourth"><img src="${imageGallery1[1]}" alt="">
-            </div>
-            <div class="column is-one-fourth"><img src="${imageGallery1[2]}" alt="">
-            </div>
-            <div class="column is-one-fourth"><img src="${imageGallery1[3]}" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>`
     }
 
     if(numMats.innerHTML == 2) {
@@ -341,114 +556,6 @@ submitBtn.addEventListener('click', () => {
       </div>
     </div>
   </div>`
-      materialsDescription2 = `<div class="column matDesc2" style="display:none">
-      <div class="material-desc">
-        <h2 class="title">${familyMaterialTitle[1]}</h2>
-        <h4>${familyMaterialSubtitle[1]}</h4>
-        <p>${familyMaterialDescription[1]}</p>
-        <div class="columns">
-          <div class="column">
-            <ul>
-              <li class="list-style: none">
-                <span class="icon has-text-success">
-                  <i class="fas fa-check-circle"></i>
-                </span>
-                ${familyFeature2[0]}
-              </li>
-                <span class="icon has-text-success">
-                  <i class="fas fa-check-circle"></i>
-                </span>
-                ${familyFeature2[1]}
-              </ul>
-            </li>
-          </div>
-          <div class="column">
-            <ul>
-              <li>
-                <span class="icon has-text-success">
-                  <i class="fas fa-check-circle"></i>
-                </span>
-                ${familyFeature2[2]}
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="description-bars">
-          <div class="columns">
-            <div class="column is-2">
-              <strong>${familyPropertyBar2[0]}</strong>
-            </div>
-            <div class="column is-1">
-              <span class="icon has-text-info">
-                <i class="fas fa-info-circle"></i>
-              </span>
-            </div>
-            <div class="column is-1">
-              ${propertyBarMinIndex2[0]}
-            </div>
-            <div class="column is-6">
-              <progress class="progress is-link" value="${propertyBarValueIndex[0]}" max="100"
-                style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[0]}</progress>
-            </div>
-            <div class="column is-2">
-              ${propertyBarMaxIndex2[0]}
-            </div>
-
-          </div>
-          <div class="columns">
-            <div class="column is-2">
-              <strong>${familyPropertyBar2[1]}</strong>
-            </div>
-            <div class="column is-1">
-              <span class="icon has-text-info">
-                <i class="fas fa-info-circle"></i>
-              </span>
-            </div>
-            <div class="column is-1">
-              ${propertyBarMinIndex2[1]}
-            </div>
-            <div class="column is-6">
-              <progress class="progress is-link" value="${propertyBarValueIndex[1]}" max="100"
-                style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[1]}</progress>
-            </div>
-            <div class="column is-2">
-              ${propertyBarMaxIndex2[1]}
-            </div>
-
-          </div>
-          <div class="columns">
-            <div class="column is-2">
-              <strong>${familyPropertyBar2[2]}</strong>
-            </div>
-            <div class="column is-1">
-              <span class="icon has-text-info">
-                <i class="fas fa-info-circle"></i>
-              </span>
-            </div>
-            <div class="column is-1">
-              ${propertyBarMinIndex2[2]}
-            </div>
-            <div class="column is-6">
-              <progress class="progress is-link" value=${propertyBarValueIndex[2]} max="100"
-                style="padding-top:3px;margin-top: 3px;">${propertyBarValueIndex[2]}</progress>
-            </div>
-            <div class="column is-2">
-              ${propertyBarMaxIndex2[2]}
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column is-one-fourth"><img src="${imageGallery2[0]}" alt="">
-            </div>
-            <div class="column is-one-fourth"><img src="${imageGallery2[1]}" alt="">
-            </div>
-            <div class="column is-one-fourth"><img src="${imageGallery2[2]}" alt="">
-            </div>
-            <div class="column is-one-fourth"><img src="${imageGallery2[3]}" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>`
     }
 
     if(numMats.innerHTML == 3) {
@@ -489,7 +596,7 @@ submitBtn.addEventListener('click', () => {
               </div>
             </div>`
 
-      materialsDescription3 = `<div class="column matDesc3" style="display:none">
+      matDesc3 = `<div class="column matDesc3" style="display:none">
       <div class="material-desc">
         <h2 class="title">${familyMaterialTitle[2]}</h2>
         <h4>${familyMaterialSubtitle[2]}</h4>
@@ -1023,9 +1130,9 @@ submitBtn.addEventListener('click', () => {
           <h3>Materials in this family</h3>
           ${materials}
         </div>
-        ${materialsDescription1} 
-        ${materialsDescription2}
-        ${materialsDescription3}
+        ${matDesc1} 
+        ${matDesc2}
+        ${matDesc3}
       </div>
     </div>
   </section>
