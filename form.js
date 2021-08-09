@@ -154,11 +154,10 @@ submitBtn.addEventListener('click', () => {
     let waitTime = document.querySelector('.wait-time').value
     let tolerances = document.querySelector('.tolerances').value
     let maxPartSize1 = document.querySelector('.max-part-size').value
-    let nozzleTemp = document.querySelector('.nozzle-temp').value
-    let printingSpeed = document.querySelector('.printing-speed').value
-    let bedTemp = document.querySelector('.bed-temp').value
-    let bedSurface = document.querySelector('.bed-surface').value
-    let coolingFan = document.querySelector('.cooling-fan').value
+    let tensileStrength = document.querySelector('.nozzle-temp').value
+    let flexuralStrength = document.querySelector('.printing-speed').value
+    let impactResistance = document.querySelector('.bed-temp').value
+    let elongation = document.querySelector('.bed-surface').value
     let glassTemp = document.querySelector('.glass-temp').value
     let vicatTemp = document.querySelector('.vicat-temp').value
     let meltingTemp = document.querySelector('.melting-temp').value
@@ -1213,45 +1212,36 @@ let matDesc3 = `<div class="column matDesc3" style="display:none">
           <h4 class="title is-4">Mechanical properties</h4>
           <div class="columns">
             <div class="column is-5">
-              <strong class="is-size-6">Nozzle temperature</strong>
+              <strong class="is-size-6">Tensile strength</strong>
             </div>
             <div class="column">
-              <p>${nozzleTemp}
+              <p>${tensileStrength}
             </div>
           </div>
           <div class="columns">
             <div class="column is-5">
-              <strong class="is-size-6">Printing speed</strong>
+              <strong class="is-size-6">Flexural strength</strong>
             </div>
             <div class="column">
-              <p>${printingSpeed}
+              <p>${flexuralStrength}
               </p>
             </div>
           </div>
           <div class="columns">
             <div class="column is-5">
-              <strong class="is-size-6">Bed temperature</strong>
+              <strong class="is-size-6">Impact resistance</strong>
             </div>
             <div class="column">
-              <p>${bedTemp}
+              <p>${impactResistance}
               </p>
             </div>
           </div>
           <div class="columns">
             <div class="column is-5">
-              <strong class="is-size-6">Bed surface</strong>
+              <strong class="is-size-6">Elongation</strong>
             </div>
             <div class="column">
-              <p>${bedSurface}
-              </p>
-            </div>
-          </div>
-          <div class="columns">
-            <div class="column is-5">
-              <strong class="is-size-6">Cooling fan</strong>
-            </div>
-            <div class="column">
-              <p>${coolingFan}
+              <p>${elongation}
               </p>
             </div>
           </div>
