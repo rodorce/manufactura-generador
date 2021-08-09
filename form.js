@@ -158,6 +158,7 @@ submitBtn.addEventListener('click', () => {
     let flexuralStrength = document.querySelector('.printing-speed').value
     let impactResistance = document.querySelector('.bed-temp').value
     let elongation = document.querySelector('.bed-surface').value
+    let modulus = document.querySelector('.modulus').value
     let glassTemp = document.querySelector('.glass-temp').value
     let vicatTemp = document.querySelector('.vicat-temp').value
     let meltingTemp = document.querySelector('.melting-temp').value
@@ -1210,6 +1211,14 @@ let matDesc3 = `<div class="column matDesc3" style="display:none">
         </div>
         <div class="column is-one-fourth">
           <h4 class="title is-4">Mechanical properties</h4>
+          <div class="columns">
+            <div class="column is-5">
+              <strong class="is-size-6">Modulus</strong>
+            </div>
+            <div class="column">
+              <p>${modulus}
+            </div>
+          </div>
           <div class="columns">
             <div class="column is-5">
               <strong class="is-size-6">Tensile strength</strong>
