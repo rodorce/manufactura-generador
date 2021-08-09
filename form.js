@@ -6,7 +6,7 @@ let materialDos = document.querySelector('.material-2')
 let materialTres = document.querySelector('.material-3')
 let familyMaterialTitle = []
 let familyMaterialSubtitle = []
-let familyImages = []
+var familyImages = []
 let materials = ``
 dropdown.addEventListener('click', function(event) {
   event.stopPropagation();
@@ -125,9 +125,9 @@ submitBtn.addEventListener('click', () => {
     propertyBarValueIndex3[1] = document.querySelector('.family-value-index-propertyBar32').value
     propertyBarValueIndex3[2] = document.querySelector('.family-value-index-propertyBar33').value
 
-    familyImages[0] = document.querySelector('family-image')
-    familyImages[1] = document.querySelector('family-image1')
-    familyImages[2] = document.querySelector('family-image2')
+    familyImages[0] = document.querySelector('.family-image1').value
+    familyImages[1] = document.querySelector('.family-image2').value
+    familyImages[2] = document.querySelector('.family-image3').value
 
 
     var imageGallery1 = []
@@ -517,7 +517,7 @@ let matDesc3 = `<div class="column matDesc3" style="display:none">
     <div class="button material-button materialBtn1 is-white">
       <div class="columns">
         <div class="column">
-          <img src="${familyImages[0]}" alt="img" class="image materialsImg">
+          <img src="${familyImages[0]}" alt="img" class="image family-image1 materialsImg">
         </div>
         <div class="column">
           <h5 class="is-title">${familyMaterialTitle[0]}</h6>
@@ -536,7 +536,7 @@ let matDesc3 = `<div class="column matDesc3" style="display:none">
     <div class="button material-button materialBtn1  is-white">
       <div class="columns">
         <div class="column">
-          <img src="${familyImages[0]}" alt="img" class="image materialsImg">
+          <img src="${familyImages[0]}" alt="img" class="image family-image1 materialsImg">
         </div>
         <div class="column">
           <h5 class="is-title">${familyMaterialTitle[0]}</h6>
@@ -547,7 +547,7 @@ let matDesc3 = `<div class="column matDesc3" style="display:none">
     <div class="button material-button materialBtn2 is-white">
       <div class="columns">
         <div class="column">
-          <img src="${familyImages[1]}" alt="img" class="image materialsImg">
+          <img src="${familyImages[1]}" alt="img" class="image family-image2 materialsImg">
         </div>
         <div class="column">
           <h5 class="is-title">${familyMaterialTitle[1]}</h6>
@@ -564,7 +564,7 @@ let matDesc3 = `<div class="column matDesc3" style="display:none">
               <div class="button material-button materialBtn1 is-white">
                 <div class="columns">
                   <div class="column">
-                    <img src="${familyImages[0]}" alt="img" class="image materialsImg">
+                    <img src="${familyImages[0]}" alt="img" class="image family-image1 materialsImg">
                   </div>
                   <div class="column">
                     <h5 class="is-title">${familyMaterialTitle[0]}</h6>
@@ -575,7 +575,7 @@ let matDesc3 = `<div class="column matDesc3" style="display:none">
               <div class="button material-button materialBtn2 is-white">
                 <div class="columns">
                   <div class="column">
-                    <img src="${familyImages[1]}" alt="img" class="image materialsImg">
+                    <img src="${familyImages[1]}" alt="img" class="image family-image2 materialsImg">
                   </div>
                   <div class="column">
                     <h5 class="is-title">${familyMaterialTitle[1]}</h6>
@@ -586,7 +586,7 @@ let matDesc3 = `<div class="column matDesc3" style="display:none">
               <div class="button material-button materialBtn3 is-white">
                 <div class="columns">
                   <div class="column">
-                    <img src="${familyImages[2]}" alt="img" class="image materialsImg">
+                    <img src="${familyImages[2]}" alt="img" class="image family-image3 materialsImg">
                   </div>
                   <div class="column">
                     <h5 class="is-title">${familyMaterialTitle[2]}</h6>
